@@ -1,13 +1,58 @@
 :root {
   --primery-text-color: #757575;
   --title-text-color: #212121;
+  --hero-footer-color: #2F303A;
+  --btn-color: #2196F3;
+  --primery-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
 }
 
 body {
-  background-color: #ffffff;
-  color: #757575;
-  font-family: 'Roboto', sans-serif;
+font-family: var(--primery-font);
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--primery-text-color);
 }
+
+.logo .link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196F3;
+}
+
+.logo-dark {
+  color: #212121;
+}
+
+.logo-white {
+  color: white;
+}
+
+.page-header .link {
+  font-family: Roboto;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #212121;
+}
+
+.auth-nav .link {
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+
+color: #757575;
+}
+
+
 
 .list {
   list-style: none;
@@ -17,16 +62,11 @@ body {
   text-decoration: none;
 }
 
-.site-nav .link {
-  color: #212121;
-}
 
-.auth-nav .link {
-  color: #757575;
-}
 
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.site-nav .link:active {
   color: #2196f3;
 }
 
