@@ -1,27 +1,32 @@
 :root {
   --primery-text-color: #757575;
   --title-text-color: #212121;
-  --hero-footer-color: #2F303A;
-  --btn-color: #2196F3;
+  --hero-footer-color: #2f303a;
+  --btn-color: #2196f3;
   --primery-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
 }
 
 body {
-font-family: var(--primery-font);
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: var(--primery-text-color);
+  font-family: var(--primery-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primery-text-color);
 }
 
-.logo .link {
+/* ----------------HEADER------------------ */
+.page-header {
+  background-color: #ffffff;
+}
+
+.logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .logo-dark {
@@ -29,30 +34,28 @@ color: var(--primery-text-color);
 }
 
 .logo-white {
+  background-color: tomato;
   color: white;
 }
 
-.page-header .link {
-  font-family: Roboto;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: #212121;
+.page-header-link {
+  font-family: var(--primery-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
 
-.auth-nav .link {
-  font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
-
-color: #757575;
+.auth-nav-mail,
+.auth-nav-tel {
+  font-family: var(--primery-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primery-text-color);
 }
-
-
 
 .list {
   list-style: none;
@@ -62,17 +65,28 @@ color: #757575;
   text-decoration: none;
 }
 
+.studio-color {
+  color: var(--btn-color);
+}
 
+.link-color {
+  color: var(--btn-color);
+}
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.site-nav .link:active {
+.heading {
+  background-color: #2f303a;
+}
+
+/* ---------------ПСЕВДОКЛАССЫ------------ */
+
+.page-header-link:hover,
+.page-header-link:focus {
   color: #2196f3;
 }
 
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav-mail:hover,
+.auth-nav-mail:focus,
+.auth-nav-tel:hover,
+.auth-nav-tel:focus {
   color: #2196f3;
 }
-
-добавлят переменную цвета линков
