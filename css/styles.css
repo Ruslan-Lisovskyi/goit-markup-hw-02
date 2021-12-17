@@ -1,6 +1,8 @@
 :root {
   --primery-text-color: #757575;
+  --primery-bgr-color: #ffffff;
   --title-text-color: #212121;
+  --btn-text-color: #212121;
   --hero-footer-color: #2f303a;
   --btn-color: #2196f3;
   --primery-font: 'Roboto', sans-serif;
@@ -13,6 +15,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+  background-color: var(--primery-bgr-color);
 }
 
 /* ----------------HEADER------------------ */
@@ -34,8 +37,19 @@ body {
 }
 
 .logo-white {
-  background-color: tomato;
-  color: white;
+  color: #ffffff;
+}
+
+.page-header-link:hover,
+.page-header-link:focus {
+  color: var(--btn-color);
+}
+
+.auth-nav-mail:hover,
+.auth-nav-mail:focus,
+.auth-nav-tel:hover,
+.auth-nav-tel:focus {
+  color: var(--btn-color);
 }
 
 .page-header-link {
@@ -66,27 +80,166 @@ body {
 }
 
 .studio-color {
-  color: var(--btn-color);
+  color: #2196f3;
 }
 
 .link-color {
-  color: var(--btn-color);
+  color: #2196f3;
 }
 
-.heading {
+/* ----------------MAIN----------------- */
+/* HERO */
+
+.hero {
   background-color: #2f303a;
 }
 
-/* ---------------ПСЕВДОКЛАССЫ------------ */
-
-.page-header-link:hover,
-.page-header-link:focus {
-  color: #2196f3;
+.heading {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
-.auth-nav-mail:hover,
-.auth-nav-mail:focus,
-.auth-nav-tel:hover,
-.auth-nav-tel:focus {
-  color: #2196f3;
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
+}
+
+.hero-btn {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: var(--primery-font);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+/* ---------------BENEFITS------------ */
+
+.benefits-titles {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.benefits-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.team-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+/* ----------------TEAM----------------- */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* ---------------PORTFOLIO -----------*/
+/* FILTERS LIST */
+
+.filters-btn {
+  font-family: var(--primery-font);
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--btn-text-color);
+  background-color: #f5f4fa;
+}
+
+.btn-all {
+  background-color: var(--btn-color);
+}
+
+.filters-btn:hover,
+.filters-btn:focus {
+  background-color: var(--btn-color);
+}
+
+/* ---------------PORTFOLIO LIST -----------*/
+
+.portfolio-titles {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+/* -----------FOOTER-------------- */
+
+.page-footer {
+  background-color: var(--hero-footer-color);
+}
+
+.page-footer-address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.page-footer-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.page-footer-address:hover,
+.page-footer-address:focus,
+.page-footer-link:hover,
+.page-footer-link:focus {
+  color: #00cc00;
 }
