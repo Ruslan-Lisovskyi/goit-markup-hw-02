@@ -110,6 +110,7 @@ body {
 }
 
 .hero-btn {
+  cursor: pointer;
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
@@ -177,6 +178,7 @@ body {
 /* FILTERS LIST */
 
 .filters-btn {
+  cursor: pointer;
   font-family: var(--primery-font);
   position: relative;
   left: 50%;
