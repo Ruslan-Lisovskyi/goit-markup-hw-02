@@ -1,10 +1,13 @@
 :root {
   --primery-text-color: #757575;
   --primery-bgr-color: #ffffff;
+  --secondary-bgr-color: #f5f4fa;
   --title-text-color: #212121;
   --btn-text-color: #212121;
   --hero-footer-color: #2f303a;
   --btn-color: #2196f3;
+  --hero-btn-hover: #188ce8;
+  --pf-link-color: rgba(255, 255, 255, 0.6);
   --primery-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
 }
@@ -20,24 +23,24 @@ body {
 
 /* ----------------HEADER------------------ */
 .page-header {
-  background-color: #ffffff;
+  background-color: var(--primery-bgr-color);
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--btn-color);
 }
 
 .logo-dark {
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .logo-white {
-  color: #ffffff;
+  color: var(--primery-bgr-color);
 }
 
 .page-header-link:hover,
@@ -45,10 +48,10 @@ body {
   color: var(--btn-color);
 }
 
-.auth-nav-mail:hover,
-.auth-nav-mail:focus,
-.auth-nav-tel:hover,
-.auth-nav-tel:focus {
+.auth-nav.link:hover,
+.auth-nav.link:focus,
+.auth-nav.link:hover,
+.auth-nav.link:focus {
   color: var(--btn-color);
 }
 
@@ -58,11 +61,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--btn-text-color);
 }
 
-.auth-nav-mail,
-.auth-nav-tel {
+.auth-nav.link {
   font-family: var(--primery-font);
   font-weight: 500;
   font-size: 14px;
@@ -80,18 +82,18 @@ body {
 }
 
 .studio-color {
-  color: #2196f3;
+  color: var(--btn-color);
 }
 
 .link-color {
-  color: #2196f3;
+  color: var(--btn-color);
 }
 
 /* ----------------MAIN----------------- */
 /* HERO */
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--hero-footer-color);
 }
 
 .heading {
@@ -101,35 +103,33 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primery-bgr-color);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--hero-btn-hover);
 }
 
 .hero-btn {
   cursor: pointer;
   position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
   font-family: var(--primery-font);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--primery-bgr-color);
+  background-color: var(--btn-color);
 }
 
 /* ---------------BENEFITS------------ */
 
 .benefits-titles {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -144,7 +144,7 @@ body {
 }
 
 .team-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -155,7 +155,7 @@ body {
 /* ----------------TEAM----------------- */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bgr-color);
 }
 
 .team-name {
@@ -181,15 +181,13 @@ body {
   cursor: pointer;
   font-family: var(--primery-font);
   position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--btn-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bgr-color);
 }
 
 .btn-all {
@@ -199,12 +197,13 @@ body {
 .filters-btn:hover,
 .filters-btn:focus {
   background-color: var(--btn-color);
+  color: var(--primery-bgr-color);
 }
 
 /* ---------------PORTFOLIO LIST -----------*/
 
 .portfolio-titles {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -228,7 +227,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--primery-bgr-color);
 }
 
 .page-footer-link {
@@ -236,12 +235,12 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--pf-link-color);
 }
 
 .page-footer-address:hover,
 .page-footer-address:focus,
 .page-footer-link:hover,
 .page-footer-link:focus {
-  color: #00cc00;
+  color: var(--btn-color);
 }
